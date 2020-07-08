@@ -1,0 +1,3 @@
+  triggers = {
+    build_number = "${timestamp()}"
+  }

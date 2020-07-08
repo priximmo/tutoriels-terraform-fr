@@ -6,7 +6,7 @@
 
 
 <br>
-* problem de null_resource > imposible de gérer la dépendance
+* problem de null_resource > impossible de gérer la dépendance
 
 
 <br>
