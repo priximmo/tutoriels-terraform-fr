@@ -1,3 +1,11 @@
   triggers = {
     build_number = "${timestamp()}"
   }
+
+https://www.bogotobogo.com/DevOps/Terraform/Terraform-Introduction-AWS-loops.php
+
+https://archive.fosdem.org/2019/schedule/event/terraform_best_practices/
+
+https://terra-farm.github.io/provider-virtualbox/reference/resource_vm.html
+
+https://project-awesome.org/shuaibiyy/awesome-terraform
