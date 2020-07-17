@@ -1,12 +1,3 @@
-variable "mysql-password" {}
-variable "mysql-dir" {}
-variable "wordpress-dir" {}
-
-
-provider "kubernetes" {
-  load_config_file = true
-}
-
 resource "kubernetes_persistent_volume" "wp-pv-mysql" {
   metadata {
     name = "pv-mysql"
@@ -52,11 +43,11 @@ resource "kubernetes_persistent_volume_claim" "wp-pvc-mysql" {
         storage = "2Gi"
       }
     }
-    volume_name = kubernetes_persistent_volume.wp-pv-mysql.metadata[0].name
+    volume_name = kubernetes_persistent_volume.wp-pv-mysql.metadata[0].name 
   }
 }
 
-resource "kubernetes_persistent_volume_claim" "wp-pvc-wordpress" {
+resource "kubernetes_persistent_volume_claim" "wp-pvc-wordpress" {          
   metadata {
     name = "pvc-wordpress"
   }
@@ -70,13 +61,3 @@ resource "kubernetes_persistent_volume_claim" "wp-pvc-wordpress" {
     volume_name = kubernetes_persistent_volume.wp-pv-wordpress.metadata[0].name
   }
 }
-
-resource "kubernetes_secret" "mysql" {
-  metadata {
-    name = "mysql-pass"
-  }
-  data = {
-    password = var.mysql-password
-  }
-}
-
