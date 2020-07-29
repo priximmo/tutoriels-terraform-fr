@@ -2,7 +2,7 @@
 %author: xavki
 
 
-# KVM : installation provier et première VM
+# KVM : installation provider et première VM
 
 
 <br>
@@ -25,6 +25,9 @@ mkdir ~/.terraform.d/plugins && cd ~/.terraform.d/plugins
 wget https://github.com/dmacvicar/terraform-provider-libvirt/releases/download/v0.6.2/terraform-provider-libvirt-0.6.2+git.1585292411.8cbe9ad0.Ubuntu_18.04.amd64.tar.gz
 tar xvf terraform-provider-libvirt-0.6.2+git.1585292411.8cbe9ad0.Ubuntu_18.04.amd64.tar.gz
 rm terraform-provider-libvirt-0.6.2+git.1585292411.8cbe9ad0.Ubuntu_18.04.amd64.tar.gz
+
+mkdir ~/monprojet && cd ~/monprojet
+terraform init
 ```
 
 <br>
