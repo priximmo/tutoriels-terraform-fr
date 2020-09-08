@@ -12,3 +12,46 @@ https://archive.fosdem.org/2019/schedule/event/terraform_best_practices/
 https://terra-farm.github.io/provider-virtualbox/reference/resource_vm.html
 
 https://project-awesome.org/shuaibiyy/awesome-terraform
+
+
+# cloud-init configuration
+# install packages
+packages:
+- qemu-guest-agent
+- git
+- python
+- wget
+
+# cloud-init configuration
+# run command after boot
+runcmd:
+- [“cd”, “/home/terraform_guest”]
+- [“git”, “clone”, “https://github.com/krebsalad/PiCalcPy.git"]
+- [“cd”, “PiCalcPy”]
+- [“python”, “install_picalc.py”]
+- [“python”, “run.py”, “mode=server”,”&”]
+
+>> flask api
+
+curl
+
+
+## Destroy network et poo
+
+resource “null_resource” “picalc_network” {
+# when terraform apply
+provisioner “local-exec” {
+command = “”
+interpreter = [“/bin/bash”, “-c”]
+}# when terraform destroy
+provisioner “local-exec” {
+when = “destroy”
+command = “”
+}
+}
+
+command = “virsh net-undefine picalc_net && virsh net-destroy picalc_net”
+
+add load balancer
+
+
