@@ -6,17 +6,23 @@
 
 
 <br>
+
+
 * utilisation de provisioner sur ces resources (passer des commandes)
 		> provisioner remote-exec : exécution sur la machine distante
 		> provisioner local-exec : exécution sur la machine terraform
 
 <br>
+
+
 * type de variables :
 		* string
 		* list
 		* map
 
 <br>
+
+
 * exemple string :
 
 ```
@@ -38,6 +44,8 @@ resource "null_resource" "node1" {
 
 
 <br>
+
+
 * map
 
 ```
@@ -57,6 +65,8 @@ resource "null_resource" "hosts" {
 ```
 
 <br>
+
+
 * trigger
 
 ```
@@ -78,6 +88,8 @@ Rq : boucle for préférable
 
 
 <br>
+
+
 * parcourir une liste
 
 ```
@@ -93,6 +105,8 @@ resource "null_resource" "hosts" {
 ```
 
 <br>
+
+
 * avec le trigger
 
 ```

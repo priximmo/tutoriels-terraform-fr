@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * création d'un réseau
 
 ```
@@ -22,6 +24,8 @@ resource "libvirt_network" "vm_network" {
 Rq :désactivation du dhcp sur le réseau (entier)
 
 <br>
+
+
 * ajout d'un cloud init "meta_data"
 
 ```
@@ -38,6 +42,8 @@ Rq : https://cloudinit.readthedocs.io/en/latest/topics/datasources/nocloud.html#
 
 
 <br>
+
+
 * ajout à notre cloudinit_disk
 
 ```
@@ -49,6 +55,8 @@ resource "libvirt_cloudinit_disk" "commoninit" {
 ```
 
 <br>
+
+
 * libvirt_interface avec un network_interface reprenant le nom uniquement
 
 ```

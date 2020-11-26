@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * prérequis : installation terraform
 
 ```
@@ -16,6 +18,8 @@ sudo unzip terraform_0.12.24_linux_amd64.zip  -d /usr/local/bin/
 ```
 
 <br>
+
+
 * installation du provider
 
 ```
@@ -31,6 +35,8 @@ terraform init
 ```
 
 <br>
+
+
 * modification des permissions kvm
 
 ```
@@ -45,6 +51,8 @@ sudo systemctl restart libvirtd
 
 
 <br>
+
+
 * première VM
 
 ```

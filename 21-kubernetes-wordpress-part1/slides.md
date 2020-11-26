@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * étapes :
 		* installation des volumes : PV et PVC
 		* installation des deployments
@@ -14,6 +16,8 @@
 
 
 <br>
+
+
 INSTALLATION DES PV ET PVC
 
 * pv > pvc > deployment > pod
@@ -31,6 +35,8 @@ INSTALLATION DES PV ET PVC
 
 
 <br>
+
+
 * déclaration des variables
 
 main.tf
@@ -48,6 +54,8 @@ mysql-password  = "password"
 ```	
 
 <br>
+
+
 * provider
 
 ```
@@ -62,6 +70,8 @@ provider "kubernetes" {
 
 
 <br>
+
+
 * persistent volume mysql
 
 ```
@@ -90,6 +100,8 @@ resource "kubernetes_persistent_volume" "wp-pv-mysql" {
 
 
 <br>
+
+
 * persistent volume wordpress
 
 ```
@@ -118,6 +130,8 @@ resource "kubernetes_persistent_volume" "wp-pv-wordpress" {
 
 
 <br>
+
+
 * persistent volume claim mysql
 
 ```
@@ -144,6 +158,8 @@ resource "kubernetes_persistent_volume_claim" "wp-pvc-mysql" {
 
 
 <br>
+
+
 * persistent volume claim wordpress
 
 ```
@@ -170,6 +186,8 @@ resource "kubernetes_persistent_volume_claim" "wp-pvc-wordpress" {
 
 
 <br>
+
+
 * création d'un secret = mot de passe bdd
 
 ```

@@ -7,6 +7,8 @@
 
 <br>
 
+
+
 Page de download : https://www.terraform.io/downloads.html
 
 ```
@@ -17,6 +19,8 @@ sudo chmod 755 /usr/local/bin/terraform
 ```
 
 <br>
+
+
 * créer unr répertoire de projet
 
 ```
@@ -30,6 +34,8 @@ terraform init
 ```
 
 <br>
+
+
 * test du hello world
 
 ```

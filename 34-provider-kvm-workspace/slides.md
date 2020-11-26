@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * workspace = isolation
 
 * via les tfstate > plusieurs state
@@ -14,6 +16,8 @@
 * exemple : un workspace par env
 
 <br>
+
+
 * commandes
 
 ```
@@ -23,6 +27,8 @@ terraform workspace select dev
 ```
 
 <br>
+
+
 * locals = capacité à affecter un nom à une expression
 
 * variable à contenu dynamique
@@ -33,6 +39,8 @@ terraform workspace select dev
 
 
 <br>
+
+
 * définition de l'environnement
 
 ```
@@ -40,6 +48,8 @@ env="${terraform.workspace}"
 ```
 
 <br>
+
+
 * préparation de notre local à plusieurs env
 
 ```
@@ -50,6 +60,8 @@ env="${terraform.workspace}"
 ```
 
 <br>
+
+
 * définition en fonction de l'environnement
 
 ```

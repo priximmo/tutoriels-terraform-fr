@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * étapes :
 		* installation des volumes : PV et PVC
 		* installation des deployments
@@ -14,6 +16,8 @@
 
 
 <br>
+
+
 INSTALLATION DES DEPLOYMENTS
 
 * organisation :
@@ -29,6 +33,8 @@ url > haproxy > ingress controller > ingress > service > pods
 # Terraform : Kubernetes - Wordpress
 
 <br>
+
+
 * service wordpress 
 
 ```
@@ -36,6 +42,8 @@ cluster_ip = "None"
 ``` 
 
 <br>
+
+
 * ingress
 
 ```
@@ -69,6 +77,8 @@ resource "kubernetes_ingress" "wp-ingress" {
 # Terraform : Kubernetes - Wordpress
 
 <br>
+
+
 
 ```
 output "summary" {

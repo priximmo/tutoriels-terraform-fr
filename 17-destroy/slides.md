@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * suppression des ressources gérées par le tfstate
 
 ```
@@ -13,6 +15,8 @@ terraform destroy
 ```
 
 <br>
+
+
 * option -target
 
 ```
@@ -20,6 +24,8 @@ terraform destroy -target <resource|module>
 ```
 
 <br>
+
+
 * when destroy
 
 ```

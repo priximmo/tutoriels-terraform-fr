@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * locals = capacité à affecter un nom à une expression
 
 <br>
+
+
 Documentation : https://www.terraform.io/docs/configuration/locals.html
 
 ```
@@ -20,6 +24,8 @@ locals {
 ```
 
 <br>
+
+
 * variable à contenu dynamique
 
 ```
@@ -41,6 +47,8 @@ locals {
 Rq: lookup > fonction > parcourir une map et récupérer une clef
 
 <br>
+
+
 * les isoler comme les variables
 
 -------------------------------------------------------------------------------------
@@ -51,6 +59,8 @@ Rq: lookup > fonction > parcourir une map et récupérer une clef
 
 
 <br>
+
+
 * utilisation
 
 ```
@@ -65,6 +75,8 @@ resource "libvirt_network" "vm_network" {
 ```
 
 <br>
+
+
 * ou encore 
 
 ```

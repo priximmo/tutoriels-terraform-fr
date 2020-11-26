@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * check de compatibilité
 
 ```
@@ -15,6 +17,8 @@ kvm-ok
 ```
 
 <br>
+
+
 * installation
 
 ```
@@ -28,6 +32,8 @@ lsmod | grep -i kvm
 ```
 
 <br>
+
+
 * start libvirtd
 
 ```
@@ -40,6 +46,8 @@ sudo systemctl enable libvirtd --now
 # KVM : Installation
 
 <br>
+
+
 * si pas de default
 
 ```
@@ -66,6 +74,8 @@ cat default.xml
 ```
 
 <br>
+
+
 * si default pas activé
 
 ```
@@ -82,6 +92,8 @@ sudo virsh net-autostart --network default
 
 
 <br>
+
+
 * si nécessaire
 
 ```

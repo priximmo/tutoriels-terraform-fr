@@ -6,12 +6,18 @@
 
 
 <br>
+
+
 * mac address = adresse physique unique d'une interface réseau
 
 <br>
+
+
 * impossible de fixer l'ip directement dans la ressource "libvirt_domain"
 
 <br>
+
+
 * fixer la mac address :
 
 ```
@@ -22,9 +28,13 @@
 ```
 
 <br>
+
+
 * définition des ip par mac address dans la conf réseau
 
 <br>
+
+
 * exemple du dump xml du réseau default
 
 ```
@@ -38,6 +48,8 @@ virsh net-dumpxml default
 
 
 <br>
+
+
 * créer son propre
 
 ```

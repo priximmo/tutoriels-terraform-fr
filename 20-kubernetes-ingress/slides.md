@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * objectifs :
 	* créer un namespace
 	* créer un pod
@@ -14,4 +16,6 @@
 	>> ingress
 
 <br>
+
+
 ingress(default) >> svc inter(default)  >> svc(xavki) >> pod(xavki)

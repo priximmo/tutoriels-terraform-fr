@@ -6,10 +6,14 @@
 
 
 <br>
+
+
 Doc volume : https://www.terraform.io/docs/providers/docker/r/volume.html
 Doc container : https://www.terraform.io/docs/providers/docker/r/container.html
 
 <br>
+
+
 * création d'un volume
 
 ```
@@ -19,6 +23,8 @@ resource "docker_volume" "xavkivol" {
 ```
 
 <br>
+
+
 * utilisation du volume dans la ressource conteneur
 
 ```
@@ -34,6 +40,8 @@ resource "docker_volume" "xavkivol" {
 
 
 <br>
+
+
 * plus complet
 
 ```

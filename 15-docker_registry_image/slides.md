@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 Doc : https://www.terraform.io/docs/providers/docker/d/registry_image.html
 
 <br>
+
+
 * checker l'idempotence >> vidéo précédente = problème
 
 ```
@@ -16,6 +20,8 @@ terraform plan
 ```
 
 <br>
+
+
 * important bien checker les contenus des attributs
 
 ```
@@ -23,6 +29,8 @@ terraform show
 ```
 
 <br>
+
+
 * connexion à une registry
 
 ```
@@ -32,6 +40,8 @@ data "docker_registry_image" "myimg" {
 ```
 
 <br>
+
+
 * pull d'une image
 
 ```
@@ -44,4 +54,6 @@ resource "docker_image" "testter" {
 Rq : importance du trigger
 
 <br>
+
+
 * utilisation de l'attribut "latest" et pas du "name"

@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * cloud init : post-installation
 
 * création de users, clef ssh, sécurité ,package, lancement de commandes...
 
 <br>
+
+
 * amélioration sur la vidéo précédente : pas de download
 
 wget "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
@@ -40,6 +44,8 @@ resource "libvirt_volume" "centos7-qcow2" {
 
 
 <br>
+
+
 * ajout du fichier cloud init à une data source
 
 ```
@@ -49,6 +55,8 @@ data "template_file" "user_data" {
 ```
 
 <br>
+
+
 * définition d'un disk dédié
 
 ```
@@ -59,6 +67,8 @@ resource "libvirt_cloudinit_disk" "commoninit" {
 ```
 
 <br>
+
+
 * ajout du cloud init dans la défintion de la VM
 
 ```

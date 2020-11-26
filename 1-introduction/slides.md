@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * C'est quoi ? management d'infrastructure
 		* construire 
 		* modifier
@@ -14,6 +16,8 @@
 * site : https://www.terraform.io/ | Hashicorp
 
 <br>
+
+
 * utilisable sur de nombreux providers :
 	https://www.terraform.io/docs/providers/index.html
 
@@ -24,6 +28,8 @@
 * génération d'un plan d'application > application du plan (état final recherché)
 
 <br>
+
+
 * utilisation :
 		* IaC (infrastructure as code)
 		* automatisation d'infrastructure
@@ -36,6 +42,8 @@
 
 
 <br>
+
+
 * State :
 		* stockage de l'état (State) de l'infra et sa configuration
 		* diff entre l'état réel et le state // metadata // objectif de perfs sur de large infra
@@ -43,6 +51,8 @@
 		* tfstate >> plan >> changements/créations
 
 <br>
+
+
 * différentes étapes :
 		* refresh
 		* plan
@@ -67,6 +77,8 @@
 
 
 <br>
+
+
 * fichiers utilisés = .tf
 
 * resources = une brique d'infra (instances, containers, switch...)

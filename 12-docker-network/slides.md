@@ -6,10 +6,14 @@
 
 
 <br>
+
+
 Doc network : https://www.terraform.io/docs/providers/docker/r/network.html
 Doc container: https://www.terraform.io/docs/providers/docker/r/container.html
 
 <br>
+
+
 * création d'un réseau
 
 ```
@@ -19,6 +23,8 @@ resource "docker_network" "xavkinet" {
 ```
 
 <br>
+
+
 * utilisation
 
 ```
@@ -42,6 +48,8 @@ resource "docker_container" "nginx" {
 
 
 <br>
+
+
 * changement de range
 
 ```

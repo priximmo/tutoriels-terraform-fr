@@ -6,15 +6,23 @@
 
 
 <br>
+
+
 * modules : regroupement de fichiers tf avec une cohérence en matière de resources
 
 <br>
+
+
 * module terraform = rôle ansible
 
 <br>
+
+
 * registry : https://registry.terraform.io/
 
 <br>
+
+
 * module = répertoire(s) + fichier(s) tf
 
 ----------------------------------------------------------------------------
@@ -23,6 +31,8 @@
 
 
 <br>
+
+
 * utilisation d'un module
 
 ```
@@ -32,11 +42,15 @@ module "monmodule" {
 ```
 
 <br>
+
+
 * principe d'héritage du provider
 		* par défaut celui du fichier dans lequel il est appelé
 		* prossibilité de préciser le provider
 
 <br>
+
+
 * possiblité d'instancier plusieurs fois un même module
 
 
@@ -55,6 +69,8 @@ module "instance2" {
 
 
 <br>
+
+
 * structure d'un module 
 
 ```
@@ -93,6 +109,8 @@ module "instance2" {
 
 
 <br>
+
+
 * installation d'un module
 
 ```
@@ -101,6 +119,8 @@ terraform init
 ```
 
 <br>
+
+
 * peut permettre de gérer la gestion de dépendances
 
 ```
@@ -111,6 +131,8 @@ terraform apply -target=module.postgres
 Rq : ou via les variables
 
 <br>
+
+
 * problématique de la vidéo précédente
 
 cf pb de dépendance d'installation de docker avant de jouer le provider docker

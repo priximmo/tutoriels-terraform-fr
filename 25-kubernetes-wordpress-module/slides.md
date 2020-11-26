@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * étapes :
 		* installation des volumes : PV et PVC
 		* installation des deployments
@@ -14,6 +16,8 @@
 
 
 <br>
+
+
 * exemple : module PV/PVC
 
 * passer une variable et créer pour mysql
@@ -23,3 +27,5 @@
 * idem sur les services si on le souhaite
 
 <br>
+
+

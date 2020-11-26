@@ -6,19 +6,27 @@
 
 
 <br>
+
+
 * pool storage = espace dédié au stockage des disques des VM 
 
 Documentation : https://libvirt.org/storage.html
 
 <br>
+
+
 * libvirt au lancement monte les volumes en question
 
 <br>
+
+
 * description au format xml (comme les VM ou le réseau)
 
 * cf GUI
 
 <br>
+
+
 * exemple source
 
 ```
@@ -31,6 +39,8 @@ Documentation : https://libvirt.org/storage.html
 ```
 
 <br>
+
+
 * exemple destination
 
 ```
@@ -68,6 +78,8 @@ virsh pool-undefine <nom_pool>
 
 
 <br>
+
+
 * création du pool
 
 ```
@@ -79,6 +91,8 @@ resource "libvirt_pool" "pool_mycentos" {
 ```
 
 <br>
+
+
 * utilisation du pool > volumes
 
 ```
@@ -91,6 +105,8 @@ resource "libvirt_volume" "centos7-qcow2" {
 ```
 
 <br>
+
+
 Attention : idem pour le volume cloudinit
 
 ```
@@ -107,6 +123,8 @@ resource "libvirt_cloudinit_disk" "commoninit" {
 # KVM : Pool de Stockage
 
 <br>
+
+
 * utilisation via le module en passant la variable name
 
 ```

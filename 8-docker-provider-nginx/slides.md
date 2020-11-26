@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * mise en place de la socket si à distance
 
 * faille de sécurité
 
 <br>
+
+
 * activation de la socket docker
 
 ```
@@ -26,6 +30,8 @@ sudo systemctl restart docker
 ```
 
 <br>
+
+
 * test
 
 ```
@@ -38,6 +44,8 @@ docker -H 192.168.21.103:2375 ps -a
 
 
 <br>
+
+
 * déclaration du provider
 
 ```
@@ -49,6 +57,8 @@ provider "docker" {
 Rq : possible par la socket unix
 
 <br>
+
+
 * télécharger une image
 
 ```
@@ -58,6 +68,8 @@ resource "docker_image" "nginx" {
 ```
 
 <br>
+
+
 * lancement du conteneur
 
 ```

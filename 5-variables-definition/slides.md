@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * type de variables :
 		* string
 		* number
@@ -21,6 +23,8 @@ variable "mybool" {
 ```
 
 <br>
+
+
 * deux manières d'utiliser
 
 ```
@@ -39,9 +43,13 @@ output "mavariable" {
 
 
 <br>
+
+
 * définition à plusieurs niveaux : environnement > fichier spécifique
 
 <br>
+
+
 * ordre des variables
 	* 1 - environnement
 	* 2 - fichier : terraform.tfvars
@@ -50,6 +58,8 @@ output "mavariable" {
 	* 5 - CLI : -var ou - var-file 
 
 <br>
+
+
 * environnement:
 
 ```
@@ -58,6 +68,8 @@ terraform apply
 ```
 
 <br>
+
+
 * fichier terraform.tfvars
 
 ```
@@ -65,6 +77,8 @@ echo 'str="terraform"'> terraform.tfvars
 ```
 
 <br>
+
+
 * fichier auto
 
 ```
@@ -72,6 +86,8 @@ echo 'str="auto"'> production.auto.tfvars
 ```
 
 <br>
+
+
 * le fichier ou la cli
 
 ```

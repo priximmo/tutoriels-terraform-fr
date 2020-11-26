@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * étapes :
 		* installation des volumes : PV et PVC
 		* installation des deployments
@@ -14,6 +16,8 @@
 
 
 <br>
+
+
 INSTALLATION DES DEPLOYMENTS
 
 * organisation :
@@ -28,6 +32,8 @@ INSTALLATION DES DEPLOYMENTS
 
 
 <br>
+
+
 * variables :
 
 main.tf
@@ -48,9 +54,13 @@ wordpress-lbl = "wp-wordpress"
 ```
 
 <br>
+
+
 deployment cf fichier
 
 <br>
+
+
 * service
 
 ```

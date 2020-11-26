@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * remote_exec > local_exec distant (ssh)
 
 <br>
+
+
 variable "host" {}
 resource "null_resource" "ssh_target" {
   connection {

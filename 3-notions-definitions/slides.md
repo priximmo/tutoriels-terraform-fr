@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * terraform = GO
 https://www.terraform.io/docs/providers/index.html
 
 
 <br>
+
+
 * provider : fournisseur de ressources par API (principalement)
 Registry des providers : https://registry.terraform.io/
 Certains intégrés dans le binaire GO
@@ -27,6 +31,8 @@ provider "kubernetes" {
 
 
 <br>
+
+
 * resource : élément qui peut être CRUD via le provider 
 		* Create, Remove, Update, Delete
 		* un objet d'une ressource est unique (1 nom) dans un même module
@@ -47,6 +53,8 @@ resource "aws_instance" "web" {
 ```
 
 <br>
+
+
 * data sources : ressource non modifiable
 
 ```
@@ -67,6 +75,8 @@ data "aws_ami" "ubuntu" {
 
 
 <br>
+
+
 * meta arguments
 
 ```
@@ -79,6 +89,8 @@ resource "ressource_type" "ressource_nom" {
 Rq : count = itération
 
 <br>
+
+
 * le For each
 
 ```
@@ -106,6 +118,8 @@ resource "aws_instance" "server" {
 
 
 <br>
+
+
 * State : stockage de l'état des ressources 
 
 * par défaut terraform.tfstate
